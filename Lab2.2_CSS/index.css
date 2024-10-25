@@ -141,8 +141,8 @@ a:visited{
 }
 
 .fluid-col{
-    display:inline-block;
-    width: calc(100% - 350px);
+    display: inline-block;
+    width: calc(100% - 360px);
     
 }
 
