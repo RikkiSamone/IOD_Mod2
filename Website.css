@@ -1,94 +1,206 @@
 body{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    background-color: pink;
 }
 
 .inner-container{
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    margin: 10% 5% 10% 5%;
+    margin: 5% 10% 5% 10%;
     box-sizing: border-box;
+    background-color: rgba(242, 242, 242, 0.943);
 }
 
 .nav-panel{
-    border: 2px solid black;
     padding: 0 !important;
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10%;
+    justify-items: space-evenly;
 }
 
 .nav-icons{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    height: 70%;
     margin-left: 15px;
     margin-right: 15px;
-    padding: 0 !important;
-
+    color: white;
+   position: absolute;
+   align-content: center;
+   background-color: rgb(246, 206, 239);
 
 }
 
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 30px;
+
+}
+li{
+    padding: 10px;
+    font-size: 40px !important;
+    text-align: right;
+}
+
+a:link{
+color: white;
+}
+
+
+
 .inner-left-container{
     position: relative;
-    border: 2px solid black;
     padding: 0 !important;
 }
 
 .headshot-container{
-    border: 2px solid red;
     position: relative;
     box-sizing: border-box;
     margin-top: -85px;
     height: 900px;
     margin-bottom: -85px;
     width: 350px;
-    z-index: 1;
-    
-    
 }
 
 .hero-headshot{
-    border: 2px solid green;
-    background-image: url(assets/Whimsical.png);
+    background-image: url(assets/website_banner-2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: -15px;
-    height: 1000px;
-    margin-bottom: -85px;
+    box-shadow:  30px 20px 15px 10px rgba(130, 129, 129, 0.379);
+    height: 140%;
+    margin-top: 15%;
     width: 250px; 
     padding: 0 !important;
-  
-    
-   
+}
+
+.headshot-container:hover{
+    opacity: .7;
 }
 
 .name-banner{
-    border: 2px solid blue;
     position: absolute;
     text-align: center;
-    top: 80%;
-    z-index: 2;
+    top: 60%;
+    left: 0%;
+    width: calc(100% - 100px);
+    padding: 0 !important;
+    margin: 0;
+    
+} 
+
+h1{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.name{
+    color: white;
+    letter-spacing: 8px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black,  1px 0 black, 0 -1px black;
+    padding: 0px;
+    margin-top: 0px !important;
 }
 
 .subtitle{
-   
+   color: rgb(240, 185, 224);
+   text-shadow: 2px 2px rgba(255, 0, 119, 0.654);
+   font-size: 20px;
+   letter-spacing: 2px;
+   font-family: cursive;
+   padding: 0px;
+   margin-top: 0px !important;
 }
+
+.socials{
+    color: white;
+    height: 30px;
+    margin-right: 0px;
+    margin-left: 10px;
+
+}
+
+span{
+  font-size: 30px;
+  letter-spacing: 25px;
+  text-align: center;
+  color: white;
+
+}
+
+span:hover{
+    color: magenta;
+    font-size: 35px;
+}
+
 
 
 .inner-right-container{
     display: inline-block;
-    border: 2px solid black;
     padding: 0 !important;
     max-width: calc(100% - 515px);
 }
+
+.box-heading{
+    text-align: right;
+    font-size: 30px;
+    padding: 0 !important;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    letter-spacing: 15px;
+
+}
 .about-me{
-    border: 2px solid black;
+    padding: 15px;
+    font-size: 20px;
+    text-align: right;
 }
 
+.values-container{
+    height: calc(100% - 300px);
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
 
+.values-heading{
+        text-align: right;
+        font-size: 30px;
+        padding: 0 !important;
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        letter-spacing: 15px;
+}
 
 .values-grid{
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 0;
+    font-size: 17px;
+    text-align: right;
+}
+
+.values{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td, tr{
+    padding: 45px; 
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+td:hover{
+    background-color: pink;
+    font-size: 35px;
 }
