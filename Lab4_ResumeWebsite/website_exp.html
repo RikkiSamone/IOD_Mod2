@@ -15,6 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Londrina+Sketch&family=Rock+Salt&display=swap"
     rel="stylesheet">
 <style>
+    @media (min-width: 1280px ){
     body {
         display: flex;
         flex-direction: column;
@@ -194,9 +195,396 @@
     i {
         font-size: 15px;
         letter-spacing: 3px;
+    }}
+
+
+    /*For screens between 1280 and 960 */
+@media (min-width: 960px) and (max-width: 1279px){
+    body {
+        display: flex;
+        flex-direction: column;
+         background-color: #9DACFF;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5% 10% 5% 10%;
+        box-sizing: border-box;
+       background-color: #ECFFF8;
+    }
+
+    .nav-panel {
+        padding: 0 !important;
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        position: relative;
+        margin-top: 10%;
+        justify-items: space-evenly;
+    }
+
+    .nav-icons {
+        height: 30%;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #ECFFF8;
+        position: absolute;
+        align-content: center;
+        background-color: #9DACFF;
+
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin-left: 30px;
+
+    }
+
+    li {
+        padding: 10px;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    a:link {
+         color: #ECFFF8;
     }
 
 
+
+    .inner-left-container {
+        position: relative;
+        padding: 0 !important;
+    }
+
+    .headshot-container {
+        position: relative;
+        box-sizing: border-box;
+        margin-top: -85px;
+        height: 900px;
+        margin-bottom: -85px;
+        width: 350px;
+    }
+
+    .hero-headshot {
+         background-image: url(assets/website_banner-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: grayscale(80%);
+        box-shadow: 30px 20px 15px 10px rgba(130, 129, 129, 0.379);
+        height: 200%;
+        margin-top: 15%;
+        width: 250px;
+        padding: 0 !important;
+    }
+
+    .headshot-container:hover {
+        opacity: .7;
+    }
+
+    .name-banner {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 0%;
+        width: calc(100% - 100px);
+        padding: 0 !important;
+        margin: 0;
+
+    }
+
+    h1 {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .name {
+        color: #ECFFF8;
+        letter-spacing: 8px;
+        font-family: "Rock Salt", serif;
+        font-size: 55px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding: 0px;
+        margin-top: 0px !important;
+        margin-bottom: 0px;
+
+    }
+
+    .subtitle {
+         color: #ECFFF8;
+        text-shadow: 4px 4px #5C2751;
+        font-size: 35px;
+        letter-spacing: 6px;
+        font-family: "covered by your grace", cursive;
+        padding: 0px;
+        margin-top: 0px !important;
+}
+
+    h4{
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+    .socials {
+        color: #ECFFF8;
+        height: 30px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    span {
+        font-size: 30px;
+        letter-spacing: 25px;
+        text-align: center;
+        color: #ECFFF8;
+    }
+
+    span:hover {
+        color: #5C2751;
+        font-size: 35px;
+    }
+
+    .inner-right-container {
+        display: inline-block;
+        padding: 0 !important;
+        max-width: calc(100% - 515px);
+    }
+
+    .box-heading {
+        text-align: right;
+        font-size: 20px;
+        padding: 0 !important;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        letter-spacing: 2px;
+        color: #5C2751;
+        font-family: "rock salt", serif;
+
+    }
+
+    .about-me {
+        padding: 15px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .job-title{
+        font-size: 40px;
+    }
+
+    i {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }}
+
+
+/*For screens less than 960px */
+@media (min-width: 0) and (max-width: 959px) {
+ body {
+        display: flex;
+        flex-direction: column;
+         background-color: #9DACFF;
+    }
+
+    .inner-container {
+         display: flex;
+        flex-wrap: wrap;
+        margin: 2% 4%;
+        box-sizing: border-box;
+        background-color: #ECFFF8;
+    }
+
+    .nav-panel {
+        padding: 0 !important;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        margin-top: 0%;
+        margin-left: 0px;
+        justify-items: space-evenly;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        height: 180%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 15px;
+        color: #ECFFF8;
+        position: absolute;
+        align-content: center;
+        justify-content: center;
+        background-color: #9DACFF;
+        z-index: 1;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin-left: 0px;
+
+    }
+
+    li {
+        padding: 0px;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    a:link {
+         color: #ECFFF8;
+    }
+
+
+
+    .inner-left-container {
+        position: relative;
+        padding: 0 !important;
+    }
+
+    .headshot-container {
+        position: relative;
+        box-sizing: border-box;
+        margin-top: -245px;
+        height: 900px;
+        margin-bottom: -85px;
+        width: 750px;
+    }
+
+    .hero-headshot {
+        background-image: url(assets/website_banner-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter:grayscale(80%);
+        box-shadow: 30px 20px 15px 10px rgba(130, 129, 129, 0.379);
+        height: 100%;
+        margin-top: 40%;
+        width: 50%;
+        padding: 0 !important;
+    }
+
+    .headshot-container:hover {
+        opacity: .7;
+    }
+
+    .name-banner {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 0%;
+        width: calc(100% - 100px);
+        padding: 0 !important;
+        margin: 0;
+
+    }
+
+    h1 {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+
+    .name {
+        color: #ECFFF8;
+        letter-spacing: 8px;
+        font-family: "Rock Salt", serif;
+        font-size: 40px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding: 0px;
+        margin-top: 0px !important;
+        margin-bottom: 0px;
+
+    }
+
+    .subtitle {
+        color: #ECFFF8;
+        text-shadow: 4px 4px #5C2751;
+        font-size: 45px;
+        letter-spacing: 6px;
+        font-family: "covered by your grace", cursive;
+        padding: 0px;
+        margin-top: 0px !important;
+        text-align: left;
+        margin-left: 5px;
+        width: 50%; 
+}
+
+    h4{
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        color: #ECFFF8;
+        width: 30%;
+        height: 30px;
+        margin-right: 0px;
+        margin-left: 10px;
+
+    }
+
+    span {
+        font-size: 45px;
+        letter-spacing: 25px;
+        text-align: center;
+        color: #ECFFF8;
+    }
+
+    span:hover {
+        color: #5C2751;
+        font-size: 35px;
+    }
+
+    .inner-right-container {
+        display: inline-block;
+        padding: 0 !important;
+        max-width: 100%;
+
+    }
+    .box-heading {
+        text-align: center;
+        font-size: 20px;
+        padding: 0 !important;
+        margin-top: 65px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        letter-spacing: 8px;
+        color: #5C2751;
+        font-family: "rock salt", serif;
+
+    }
+
+    .about-me {
+        padding: 15px;
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .job-title{
+        font-size: 40px;
+    }
+
+    i {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    
+        ul{
+            margin-left: 10%;
+    }
+    
+    }
 </style>
 
 </head>
