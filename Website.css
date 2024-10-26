@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: #9DACFF;
 }
 
 .inner-container{
@@ -9,7 +9,7 @@ body{
     flex-wrap: wrap;
     margin: 5% 10% 5% 10%;
     box-sizing: border-box;
-    background-color: rgba(242, 242, 242, 0.943);
+    background-color: #ECFFF8;
 }
 
 .nav-panel{
@@ -26,10 +26,10 @@ body{
     height: 70%;
     margin-left: 15px;
     margin-right: 15px;
-    color: white;
+    color: #ECFFF8;
    position: absolute;
    align-content: center;
-   background-color: rgb(246, 206, 239);
+   background-color: #9DACFF;
 
 }
 
@@ -46,7 +46,7 @@ li{
 }
 
 a:link{
-color: white;
+    color: #ECFFF8;
 }
 
 
@@ -70,6 +70,7 @@ color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:grayscale(80%);
     box-shadow:  30px 20px 15px 10px rgba(130, 129, 129, 0.379);
     height: 140%;
     margin-top: 15%;
@@ -84,7 +85,7 @@ color: white;
 .name-banner{
     position: absolute;
     text-align: center;
-    top: 60%;
+    top: 50%;
     left: 0%;
     width: calc(100% - 100px);
     padding: 0 !important;
@@ -97,27 +98,34 @@ h1{
     margin-bottom: 0px;
 }
 .name{
-    color: white;
+    color: #ECFFF8;
     letter-spacing: 8px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
+    font-family: "Rock Salt", serif;
+    font-size: 55px;
     text-shadow: -1px 0 black, 0 1px black,  1px 0 black, 0 -1px black;
     padding: 0px;
     margin-top: 0px !important;
+    margin-bottom: 0px;
 }
 
 .subtitle{
-   color: rgb(240, 185, 224);
-   text-shadow: 2px 2px rgba(255, 0, 119, 0.654);
-   font-size: 20px;
-   letter-spacing: 2px;
-   font-family: cursive;
+   color: #ECFFF8;
+   text-shadow: 4px 4px #5C2751;
+   font-size: 35px;
+   letter-spacing: 6px;
+   font-family: "covered by your grace", cursive;
    padding: 0px;
    margin-top: 0px !important;
 }
 
+h4{
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+
 .socials{
-    color: white;
+    color: #ECFFF8;
     height: 30px;
     margin-right: 0px;
     margin-left: 10px;
@@ -128,12 +136,12 @@ span{
   font-size: 30px;
   letter-spacing: 25px;
   text-align: center;
-  color: white;
+color: #ECFFF8;
 
 }
 
 span:hover{
-    color: magenta;
+    color: #5C2751;
     font-size: 35px;
 }
 
@@ -152,12 +160,15 @@ span:hover{
     margin-right: 5px;
     margin-bottom: 0px;
     letter-spacing: 15px;
+    color: #5C2751;
+    font-family: "rock salt", serif;
 
 }
 .about-me{
     padding: 15px;
     font-size: 20px;
     text-align: right;
+   
 }
 
 .values-container{
@@ -176,6 +187,8 @@ span:hover{
         margin-right: 5px;
         margin-bottom: 0px;
         letter-spacing: 15px;
+        color: #5C2751;
+        font-family: "rock salt", serif;
 }
 
 .values-grid{
@@ -185,6 +198,7 @@ span:hover{
     margin-top: 0;
     font-size: 17px;
     text-align: right;
+   
 }
 
 .values{
@@ -196,11 +210,15 @@ span:hover{
 td, tr{
     padding: 45px; 
     font-family: cursive;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
+    color: #5C2751;
+    font-family: "covered by your grace", cursive;
+    letter-spacing: 4px;
 }
 
 td:hover{
-    background-color: pink;
-    font-size: 35px;
+    background-color: #315659;
+    font-size: 42px;
+    color: #ECFFF8;
 }
